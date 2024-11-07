@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inadapteb - Por Inadaptados para Inadaptados</title>
+    <link rel="stylesheet" href="inadapted.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <header>
+        <div class="logo">
+            <!-- Envolvemos la imagen del logo en un enlace que redirige a la página principal -->
+            <a href="inadapted.html">
+                <img src="/Captura de pantalla 2024-11-06 131110.png" alt="Inadapteb Logo">  
+            </a>
+        </div>
+        <div class="logo-text">
+            <h1>Inadapteb</h1>
+            <p>Por inadaptados para inadaptados</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="introduction">
+            <h2>¿Qué es Inadapteb?</h2>
+            <p>Inadapteb es una aplicación creada para ayudar a personas inadaptadas a integrarse en grupos, conocer gente de gustos similares y aprender nuevas actividades.</p>
+        </section>
+
+        <section class="features">
+            <h2>Características</h2>
+            <ul>
+                <li>Conéctate con personas que comparten tus intereses.</li>
+                <li>Participa en actividades y eventos organizados por la comunidad.</li>
+                <li>Aprende nuevas habilidades y descubre hobbies.</li>
+            </ul>
+        </section>
+
+        <!-- Sección de Registro -->
+        <section class="signup">
+            <h2>Únete a la Comunidad</h2>
+            <button type="button" id="signup-button">Registrarse</button>
+        </section>
+
+        <!-- Sección de Registro Completo (inicialmente oculta) -->
+        <section class="full-signup" style="display: none;">
+            <h2>Registro de Usuario</h2>
+            <form id="complete-signup-form">
+                <div class="form-group">
+                    <label for="full-username">Nombre de usuario:</label>
+                    <input type="text" id="full-username" name="full-username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="full-password">Contraseña:</label>
+                    <input type="password" id="full-password" name="full-password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <button type="submit">Completar Registro</button>
+            </form>
+            <p id="complete-signup-message"></p>
+        </section>
+
+        <!-- Nueva Sección de Iniciar Sesión (inicialmente oculta) -->
+        <section class="login">
+            <h2>Iniciar Sesión</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-username">Nombre de usuario:</label>
+                    <input type="text" id="login-username" name="login-username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="login-password">Contraseña:</label>
+                    <input type="password" id="login-password" name="login-password" required>
+                </div>
+
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            <p id="login-message"></p>
+        </section>
+
+        <!-- Sección del perfil de usuario (inicialmente oculta) -->
+        <section class="profile" style="display: none;">
+            <h2>Mi Perfil</h2>
+            <p>Bienvenido, <span id="username-display"></span></p>
+            <button id="edit-profile-btn">Editar Perfil</button>
+
+            <!-- Sección para editar perfil (inicialmente oculta) -->
+            <section class="edit-profile" style="display: none;">
+                <h3>Editar Perfil</h3>
+                <form id="edit-profile-form">
+                    <div class="form-group">
+                        <label for="edit-username">Nombre de usuario:</label>
+                        <input type="text" id="edit-username" name="edit-username" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="edit-interests">Intereses:</label>
+                        <input type="text" id="edit-interests" name="edit-interests">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="edit-skills">Habilidades:</label>
+                        <input type="text" id="edit-skills" name="edit-skills">
+                    </div>
+
+                    <button type="submit">Guardar Cambios</button>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Inadapteb - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="inadapted.js"></script>
+</body>
+</html>
