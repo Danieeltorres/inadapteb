@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil - Inadapteb</title>
+    <link rel="stylesheet" href="inadapted.css">
+</head>
+<body>
+    <!-- Fondo animado -->
+    <div class="background-animation"></div>
+
+    <header>
+        <div class="logo">
+            <!-- Envolvemos la imagen del logo en un enlace que redirige a la página principal -->
+            <a href="inadapted.html">
+                <img src="/Captura de pantalla 2024-11-06 131110.png" alt="Inadapteb Logo">
+            </a>
+        </div>
+        <div class="logo-text">
+            <h1>Mi Perfil</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección de Perfil -->
+        <section class="profile-card">
+            <div class="profile-header">
+                <img src="https://via.placeholder.com/150" alt="Imagen de Perfil" class="profile-img">
+                <h2 id="username-display">Nombre de Usuario</h2>
+                <button id="edit-profile-btn" class="edit-btn">Editar Perfil</button>
+            </div>
+
+            <div class="profile-info">
+                <p><strong>Correo Electrónico:</strong> <span id="profile-email">correo@example.com</span></p>
+                <p><strong>Intereses:</strong> <span id="profile-interests">No especificado</span></p>
+                <p><strong>Habilidades:</strong> <span id="profile-skills">No especificado</span></p>
+            </div>
+        </section>
+
+        <!-- Formulario para editar perfil -->
+        <section class="edit-profile-section" style="display: none;">
+            <h3>Editar Perfil</h3>
+            <form id="edit-profile-form">
+                <div class="form-group">
+                    <label for="edit-username">Nombre de usuario:</label>
+                    <input type="text" id="edit-username" name="edit-username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="edit-email">Correo Electrónico:</label>
+                    <input type="email" id="edit-email" name="edit-email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="edit-interests">Intereses:</label>
+                    <input type="text" id="edit-interests" name="edit-interests">
+                </div>
+
+                <div class="form-group">
+                    <label for="edit-skills">Habilidades:</label>
+                    <input type="text" id="edit-skills" name="edit-skills">
+                </div>
+
+                <div class="form-group">
+                    <label for="profile-img-upload">Sube tu imagen de perfil:</label>
+                    <input type="file" id="profile-img-upload" name="profile-img-upload" accept="image/*">
+                </div>
+
+                <button type="submit" class="save-btn">Guardar Cambios</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Inadapteb - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="profile.js"></script>
+</body>
+</html>
